@@ -22,18 +22,25 @@
       font-family: 'Inter', sans-serif;
       line-height: 1.5;
       overflow-x: hidden;
+      min-width: 320px;
     }
 
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #dce5f0; }
     ::-webkit-scrollbar-thumb { background: #1a3a6b; border-radius: 8px; }
 
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
     /* -- NAVBAR -- */
     .navbar {
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
-      padding: 14px 6%;
+      padding: 14px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -44,6 +51,8 @@
       flex-wrap: wrap;
       gap: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      max-width: 1360px;
+      margin: 0 auto;
     }
     .logo {
       font-weight: 800;
@@ -96,17 +105,20 @@
       box-shadow: 0 6px 14px rgba(37, 211, 102, 0.25);
       border: none;
       cursor: pointer;
+      white-space: nowrap;
     }
     .btn-wa i { font-size: 18px; }
     .btn-wa:hover { transform: scale(1.05); box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4); }
 
     /* -- HERO -- */
     .hero {
-      padding: 80px 6% 60px;
+      padding: 80px 30px 60px;
       background: linear-gradient(145deg, #eef4fc, #ffffff);
       text-align: center;
       position: relative;
       border-bottom: 1px solid rgba(20, 50, 100, 0.06);
+      max-width: 1360px;
+      margin: 0 auto;
     }
     .hero-glow {
       position: absolute;
@@ -160,7 +172,7 @@
       border: 1px solid rgba(26, 58, 107, 0.15);
       border-radius: 28px;
       padding: 28px 32px;
-      flex: 1 1 180px;
+      flex: 0 1 180px;
       text-align: center;
       transition: 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2);
       box-shadow: 0 10px 30px -10px rgba(0,0,0,0.04);
@@ -202,7 +214,7 @@
 
     /* -- SECTION COMMON -- */
     .section-container {
-      padding: 70px 6% 50px;
+      padding: 70px 30px 50px;
       max-width: 1300px;
       margin: 0 auto;
     }
@@ -220,9 +232,10 @@
       color: #1a3a6b;
       margin-top: -30px;
       margin-bottom: 40px;
+      font-size: 16px;
     }
 
-    /* CAR GRID - Update model sesuai promo resmi */
+    /* CAR GRID */
     .car-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -290,6 +303,22 @@
       font-size: 15px;
       margin-bottom: 12px;
     }
+    .price .price-strike {
+      text-decoration: line-through;
+      color: #8899aa;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    .price .special-badge {
+      background: #1a3a6b;
+      color: #fff;
+      padding: 2px 12px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 12px;
+      display: inline-block;
+      margin-left: 6px;
+    }
     .benefit-list {
       list-style: none;
       margin: 8px 0 24px;
@@ -326,7 +355,6 @@
     .btn-order i { font-size: 16px; }
     .btn-order:hover { background: #1a3a6b; color: #fff; border-color: #1a3a6b; box-shadow: 0 6px 20px rgba(26, 58, 107, 0.2); }
 
-    /* BUTTON VARIAN */
     .btn-varian {
       background: transparent;
       border: 1.5px solid #1a3a6b;
@@ -425,7 +453,7 @@
     /* PURNA JUAL */
     .purna-jual {
       background: #eef4fc;
-      padding: 70px 6%;
+      padding: 70px 30px;
     }
     .purna-grid {
       display: grid;
@@ -453,7 +481,7 @@
     .purna-card h4 { font-size: 18px; margin-bottom: 6px; color: #0b1a30; }
     .purna-card p { font-size: 13px; color: #1a3a6b; }
 
-    /* TABLE - Update jadwal pameran dari data resmi */
+    /* TABLE */
     .table-responsive {
       background: #ffffff;
       border-radius: 24px;
@@ -483,6 +511,71 @@
     tr:last-child td { border-bottom: 0; }
     tr:hover td { background: #f5f9ff; }
 
+    .event-badge {
+      padding: 2px 12px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 700;
+      display: inline-block;
+      margin-left: 6px;
+    }
+    .badge-live { background: #e63946; color: #fff; }
+    .badge-open { background: #28a745; color: #fff; }
+
+    .exhibition-extra {
+      background: #f5f9ff;
+      padding: 28px 32px;
+      border-top: 2px solid #1a3a6b;
+      border-radius: 0 0 24px 24px;
+    }
+    .exhibition-extra .extra-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0b1a30;
+      margin-bottom: 16px;
+    }
+    .extra-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .extra-item {
+      background: #ffffff;
+      padding: 16px 20px;
+      border-radius: 16px;
+      border: 1px solid #dce5f0;
+    }
+    .extra-item strong {
+      color: #0b1a30;
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+    .extra-item p {
+      font-size: 13px;
+      color: #1a3a6b;
+      margin: 0;
+    }
+
+    .btn-wa-large {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 6px 14px rgba(37, 211, 102, 0.25);
+      border: none;
+      cursor: pointer;
+    }
+    .btn-wa-large:hover { transform: scale(1.05); box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4); }
+    .btn-wa-large i { font-size: 18px; }
+
     /* DEALER INFO */
     .dealer-highlight {
       background: #ffffff;
@@ -500,7 +593,7 @@
     /* FOOTER */
     footer {
       background: #0b1a30;
-      padding: 40px 6% 30px;
+      padding: 40px 30px 30px;
       text-align: center;
       border-top: 1px solid #1a3a6b;
       color: #b0c8e0;
@@ -508,37 +601,376 @@
     }
     footer i { color: #8bb3e0; margin: 0 4px; }
 
-    /* RESPONSIVE */
+    /* ============================================================ */
+    /* RESPONSIVE - TETAP MENJAGA UKURAN FONT & SPACING TETAP SAMA */
+    /* ============================================================ */
+    
+    /* Tablet & HP - layout berubah tapi font & spacing tetap */
     @media (max-width: 820px) {
-      .navbar { justify-content: center; }
-      .nav-links { gap: 16px; justify-content: center; }
-      .hero h1 { font-size: 36px; }
-      .zero-card { flex: 1 1 140px; padding: 20px 16px; }
-      .zero-card h2 { font-size: 40px; }
-      .modal-box { padding: 24px 20px; }
-    }
-    @media (max-width: 520px) {
-      .btn-wa { padding: 8px 16px; font-size: 12px; }
-      .hero h1 { font-size: 28px; }
-      .dealer-highlight { padding: 18px; }
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 14px 20px;
+      }
+      .nav-links {
+        gap: 20px;
+        justify-content: center;
+      }
+      .nav-links a {
+        font-size: 14px; /* TETAP 14px */
+      }
+      .hero {
+        padding: 60px 20px 40px;
+      }
+      .hero h1 {
+        font-size: 40px; /* TETAP BESAR */
+      }
+      .zero-card {
+        flex: 0 1 150px;
+        padding: 20px 16px;
+      }
+      .zero-card h2 {
+        font-size: 44px; /* TETAP */
+      }
+      .section-container {
+        padding: 50px 20px 40px;
+      }
+      .section-title {
+        font-size: 30px; /* TETAP */
+      }
+      .car-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+      }
+      .purna-jual {
+        padding: 50px 20px;
+      }
+      .purna-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+      }
+      .modal-box {
+        padding: 28px 24px;
+      }
+      .exhibition-extra {
+        padding: 20px 24px;
+      }
+      .extra-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .dealer-highlight {
+        padding: 24px 20px;
+      }
+      .container {
+        padding: 0 20px;
+      }
     }
 
-    /* Special price highlight */
-    .price-strike {
-      text-decoration: line-through;
-      color: #8899aa;
-      font-size: 14px;
-      margin-right: 10px;
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 12px 16px;
+        gap: 10px;
+      }
+      .logo {
+        font-size: 20px; /* TETAP */
+      }
+      .nav-links {
+        gap: 14px;
+        width: 100%;
+        justify-content: center;
+      }
+      .nav-links a {
+        font-size: 13px; /* TETAP */
+      }
+      .btn-wa {
+        padding: 10px 20px;
+        font-size: 13px; /* TETAP */
+        width: 100%;
+        justify-content: center;
+      }
+      .hero {
+        padding: 40px 16px 30px;
+      }
+      .hero h1 {
+        font-size: 32px; /* TETAP */
+      }
+      .hero .sub-dealer {
+        font-size: 16px; /* TETAP */
+      }
+      .hero p {
+        font-size: 17px; /* TETAP */
+        margin-bottom: 30px;
+      }
+      .triple-zero-container {
+        gap: 12px;
+        margin-bottom: 30px;
+      }
+      .zero-card {
+        flex: 0 1 120px;
+        padding: 16px 12px;
+        border-radius: 20px;
+      }
+      .zero-card h2 {
+        font-size: 36px; /* TETAP */
+      }
+      .zero-card p {
+        font-size: 13px; /* TETAP */
+      }
+      .zero-card small {
+        font-size: 10px; /* TETAP */
+      }
+      .promo-desc {
+        padding: 14px 18px;
+        font-size: 14px; /* TETAP */
+        border-radius: 30px;
+      }
+      .section-container {
+        padding: 40px 16px 30px;
+      }
+      .section-title {
+        font-size: 26px; /* TETAP */
+        margin-bottom: 30px;
+      }
+      .section-sub {
+        font-size: 15px; /* TETAP */
+        margin-top: -20px;
+        margin-bottom: 30px;
+      }
+      .car-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .car-body {
+        padding: 20px 18px 18px;
+      }
+      .car-body h3 {
+        font-size: 22px; /* TETAP */
+      }
+      .car-body .price {
+        font-size: 14px; /* TETAP */
+      }
+      .car-img {
+        height: 170px;
+      }
+      .car-img .badge {
+        top: 10px;
+        right: 10px;
+        font-size: 10px;
+        padding: 3px 12px;
+      }
+      .benefit-list li {
+        font-size: 12px; /* TETAP */
+        gap: 10px;
+      }
+      .btn-order {
+        font-size: 14px; /* TETAP */
+        padding: 12px 10px;
+      }
+      .btn-varian {
+        font-size: 11px; /* TETAP */
+        padding: 6px 14px;
+      }
+      .purna-jual {
+        padding: 40px 16px;
+      }
+      .purna-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .purna-card {
+        padding: 18px 14px;
+      }
+      .purna-card i {
+        font-size: 30px; /* TETAP */
+        margin-bottom: 12px;
+      }
+      .purna-card h4 {
+        font-size: 16px; /* TETAP */
+      }
+      .purna-card p {
+        font-size: 12px; /* TETAP */
+      }
+      .table-responsive {
+        border-radius: 16px;
+        padding: 4px;
+      }
+      table {
+        font-size: 13px; /* TETAP */
+        min-width: 420px;
+      }
+      th, td {
+        padding: 12px 14px;
+      }
+      .event-badge {
+        font-size: 10px;
+        padding: 2px 10px;
+        margin-left: 4px;
+      }
+      .exhibition-extra {
+        padding: 16px 18px;
+      }
+      .exhibition-extra .extra-title {
+        font-size: 16px; /* TETAP */
+      }
+      .extra-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .extra-item {
+        padding: 12px 16px;
+      }
+      .extra-item strong {
+        font-size: 13px; /* TETAP */
+      }
+      .extra-item p {
+        font-size: 12px; /* TETAP */
+      }
+      .btn-wa-large {
+        padding: 12px 24px;
+        font-size: 14px; /* TETAP */
+        width: 100%;
+        justify-content: center;
+      }
+      .dealer-highlight {
+        padding: 18px 16px;
+        margin-top: 20px;
+      }
+      .dealer-highlight h3 {
+        font-size: 20px; /* TETAP */
+      }
+      .dealer-highlight p {
+        font-size: 14px; /* TETAP */
+      }
+      .modal-box {
+        padding: 20px 16px;
+        border-radius: 24px;
+      }
+      .modal-box h2 {
+        font-size: 24px; /* TETAP */
+      }
+      .modal-box .sub-price {
+        font-size: 13px; /* TETAP */
+      }
+      .modal-box .close-modal {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+      }
+      .price-item {
+        font-size: 14px; /* TETAP */
+        padding: 10px 0;
+      }
+      footer {
+        padding: 30px 16px 20px;
+        font-size: 12px; /* TETAP */
+      }
+      .container {
+        padding: 0 16px;
+      }
     }
-    .special-badge {
-      background: #1a3a6b;
-      color: #fff;
-      padding: 2px 12px;
-      border-radius: 30px;
-      font-weight: 700;
-      font-size: 12px;
-      display: inline-block;
-      margin-left: 6px;
+
+    /* HP sangat kecil - tetap pertahankan ukuran */
+    @media (max-width: 400px) {
+      .navbar {
+        padding: 10px 12px;
+      }
+      .logo {
+        font-size: 18px; /* TETAP */
+      }
+      .nav-links {
+        gap: 10px;
+      }
+      .nav-links a {
+        font-size: 12px; /* TETAP */
+      }
+      .btn-wa {
+        font-size: 12px; /* TETAP */
+        padding: 8px 16px;
+      }
+      .hero h1 {
+        font-size: 28px; /* TETAP */
+      }
+      .hero .sub-dealer {
+        font-size: 14px; /* TETAP */
+      }
+      .hero p {
+        font-size: 15px; /* TETAP */
+      }
+      .zero-card {
+        flex: 0 1 100px;
+        padding: 12px 8px;
+        border-radius: 16px;
+      }
+      .zero-card h2 {
+        font-size: 30px; /* TETAP */
+      }
+      .zero-card p {
+        font-size: 11px; /* TETAP */
+      }
+      .zero-card small {
+        font-size: 9px; /* TETAP */
+      }
+      .promo-desc {
+        font-size: 12px; /* TETAP */
+        padding: 10px 14px;
+      }
+      .section-title {
+        font-size: 22px; /* TETAP */
+      }
+      .section-sub {
+        font-size: 14px; /* TETAP */
+      }
+      .car-body h3 {
+        font-size: 20px; /* TETAP */
+      }
+      .car-body .price {
+        font-size: 13px; /* TETAP */
+      }
+      .car-img {
+        height: 150px;
+      }
+      .btn-order {
+        font-size: 13px; /* TETAP */
+        padding: 10px 8px;
+      }
+      .purna-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .purna-card {
+        padding: 14px 10px;
+      }
+      .purna-card i {
+        font-size: 26px; /* TETAP */
+      }
+      .purna-card h4 {
+        font-size: 14px; /* TETAP */
+      }
+      .purna-card p {
+        font-size: 11px; /* TETAP */
+      }
+      table {
+        font-size: 12px; /* TETAP */
+        min-width: 340px;
+      }
+      th, td {
+        padding: 10px 10px;
+      }
+      .dealer-highlight h3 {
+        font-size: 18px; /* TETAP */
+      }
+      .dealer-highlight p {
+        font-size: 13px; /* TETAP */
+      }
+      .modal-box h2 {
+        font-size: 20px; /* TETAP */
+      }
+      .price-item {
+        font-size: 13px; /* TETAP */
+      }
+      footer {
+        font-size: 11px; /* TETAP */
+      }
     }
   </style>
 </head>
@@ -546,7 +978,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo"><i class="fas fa-car"></i> HYUNDAI<span>.</span>Cimanggis</div>
+    <div class="logo"><i class="fas fa-car"></i> Hyundai Cimanggis Depok</div>
     <ul class="nav-links">
       <li><a href="#promo">Triple Zero</a></li>
       <li><a href="#lineup">Line-Up</a></li>
@@ -759,7 +1191,7 @@
   </section>
 
   <!-- JADWAL PAMERAN -->
-  <section class="section-container" id="pameran" style="padding: 70px 6% 60px; max-width: 1200px; margin: 0 auto;">
+  <section class="section-container" id="pameran" style="padding: 70px 30px 60px; max-width: 1200px; margin: 0 auto;">
     <h2 class="section-title" style="font-size: 38px; font-weight: 800; text-align: center; margin-bottom: 16px; letter-spacing: -0.5px; color: #0b1a30;">
       Jadwal <span style="color: #1a3a6b;">Pameran</span> Hyundai 2026
     </h2>
@@ -783,7 +1215,7 @@
               <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;">
                 Jakarta Fair 2026 (PRJ) 
                 <br><small style="color: #5b7a9a; font-size: 12px;">JIExpo Kemayoran (Hall A)</small> 
-                <span style="background: #e63946; color: #fff; padding: 2px 12px; border-radius: 30px; font-size: 11px; font-weight: 700; margin-left: 6px; display: inline-block;">Sedang Berlangsung</span>
+                <span class="event-badge badge-live">Sedang Berlangsung</span>
               </td>
               <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;">11 Juni - 12 Juli 2026</td>
             </tr>
@@ -792,33 +1224,31 @@
               <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;">
                 Showroom Resmi Hyundai Sinar Inti 
                 <br><small style="color: #5b7a9a; font-size: 12px;">Hyundai City Store - Lippo Mall Puri (Atrium 1 GF)</small>
-                <span style="background: #28a745; color: #fff; padding: 2px 12px; border-radius: 30px; font-size: 11px; font-weight: 700; margin-left: 6px; display: inline-block;">Buka Setiap Hari</span>
+                <span class="event-badge badge-open">Buka Setiap Hari</span>
               </td>
               <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;">Setiap Hari</td>
             </tr>
             <tr style="border-bottom: none;">
               <td colspan="3" style="padding: 0;">
-                <div style="background: #f5f9ff; padding: 28px 32px; border-top: 2px solid #1a3a6b; border-radius: 0 0 24px 24px;">
-                  <div style="font-size: 18px; font-weight: 700; color: #0b1a30; margin-bottom: 16px;">
-                    🎁 Keuntungan Eksklusif &amp; Promo Triple Zero:
-                  </div>
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
-                    <div style="background: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #dce5f0;">
-                      <strong style="color: #0b1a30; display: block; margin-bottom: 4px;">Cicilan Ringan Fixed</strong>
-                      <p style="font-size: 13px; color: #1a3a6b; margin: 0;">Nikmati skema cicilan tetap (fixed) mulai dari Rp 2 Jutaan saja per bulan.</p>
+                <div class="exhibition-extra">
+                  <div class="extra-title">🎁 Keuntungan Eksklusif &amp; Promo Triple Zero:</div>
+                  <div class="extra-grid">
+                    <div class="extra-item">
+                      <strong>Cicilan Ringan Fixed</strong>
+                      <p>Nikmati skema cicilan tetap (fixed) mulai dari Rp 2 Jutaan saja per bulan.</p>
                     </div>
-                    <div style="background: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #dce5f0;">
-                      <strong style="color: #0b1a30; display: block; margin-bottom: 4px;">DP Rendah &amp; Tenor Panjang</strong>
-                      <p style="font-size: 13px; color: #1a3a6b; margin: 0;">Uang muka (DP) ringan mulai 15% dengan pilihan tenor kredit hingga 8 tahun.</p>
+                    <div class="extra-item">
+                      <strong>DP Rendah &amp; Tenor Panjang</strong>
+                      <p>Uang muka (DP) ringan mulai 15% dengan pilihan tenor kredit hingga 8 tahun.</p>
                     </div>
-                    <div style="background: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #dce5f0;">
-                      <strong style="color: #0b1a30; display: block; margin-bottom: 4px;">Hadiah Langsung Lucky Dip</strong>
-                      <p style="font-size: 13px; color: #1a3a6b; margin: 0;">Kesempatan membawa pulang iPhone, Smartwatch, hingga E-money gratis setiap transaksi.</p>
+                    <div class="extra-item">
+                      <strong>Hadiah Langsung Lucky Dip</strong>
+                      <p>Kesempatan membawa pulang iPhone, Smartwatch, hingga E-money gratis setiap transaksi.</p>
                     </div>
                   </div>
                   <div style="margin-top: 20px;">
-                    <a href="https://wa.me/6285814307221" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #fff; padding: 14px 32px; border-radius: 60px; font-weight: 700; font-size: 15px; text-decoration: none; transition: 0.3s; box-shadow: 0 6px 14px rgba(37, 211, 102, 0.25); border: none; cursor: pointer;">
-                      <i class="fab fa-whatsapp" style="font-size: 18px;"></i> Hubungi Kami &amp; Jadwalkan Test Drive
+                    <a href="https://wa.me/6285814307221" target="_blank" class="btn-wa-large">
+                      <i class="fab fa-whatsapp"></i> Hubungi Kami &amp; Jadwalkan Test Drive
                     </a>
                   </div>
                 </div>
@@ -831,7 +1261,7 @@
   </section>
 
   <!-- DEALER INFO & FOOTER -->
-  <div style="padding: 20px 6% 10px;">
+  <div style="padding: 20px 30px 10px; max-width: 1300px; margin: 0 auto;">
     <div class="dealer-highlight">
       <h3><i class="fas fa-store"></i> Hyundai Cimanggis</h3>
       <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Cimanggis No. 88, Depok · Buka Senin–Minggu 08.00–20.00</p>
