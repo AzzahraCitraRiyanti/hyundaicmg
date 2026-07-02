@@ -2,9 +2,8 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   <title>Hyundai Cimanggis · Promo Juli 2026</title>
-  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -17,47 +16,31 @@
     }
 
     body {
-      background: #f5f9ff;
+      background: #f0f4fa;
       color: #0b1a30;
       font-family: 'Inter', sans-serif;
-      line-height: 1.5;
+      line-height: 1.6;
       overflow-x: hidden;
-      min-width: 320px;
+      -webkit-font-smoothing: antialiased;
     }
 
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #dce5f0; }
-    ::-webkit-scrollbar-thumb { background: #1a3a6b; border-radius: 8px; }
-
-    .container {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 0 30px;
-    }
-
-    /* -- NAVBAR -- */
+    /* NAVBAR */
     .navbar {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      padding: 14px 30px;
+      background: #ffffff;
+      padding: 12px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
       z-index: 999;
-      border-bottom: 1px solid rgba(20, 50, 100, 0.1);
+      border-bottom: 1px solid #e8edf4;
       flex-wrap: wrap;
-      gap: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-      max-width: 1360px;
-      margin: 0 auto;
+      gap: 8px;
     }
     .logo {
       font-weight: 800;
-      font-size: 22px;
-      letter-spacing: -0.5px;
+      font-size: 18px;
       color: #0b1a30;
     }
     .logo i { color: #1a3a6b; margin-right: 6px; }
@@ -65,121 +48,90 @@
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 14px;
       list-style: none;
       flex-wrap: wrap;
     }
     .nav-links a {
       color: #1a3a6b;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 600;
       transition: 0.2s;
-      position: relative;
-    }
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      width: 0;
-      height: 2px;
-      background: #1a3a6b;
-      transition: 0.3s;
     }
     .nav-links a:hover { color: #0b1a30; }
-    .nav-links a:hover::after { width: 100%; }
 
     .btn-wa {
       background: #25D366;
       color: #fff;
-      padding: 10px 22px;
+      padding: 8px 16px;
       border-radius: 60px;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 12px;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       text-decoration: none;
       transition: 0.3s;
-      box-shadow: 0 6px 14px rgba(37, 211, 102, 0.25);
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
       border: none;
       cursor: pointer;
       white-space: nowrap;
     }
-    .btn-wa i { font-size: 18px; }
-    .btn-wa:hover { transform: scale(1.05); box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4); }
+    .btn-wa i { font-size: 14px; }
+    .btn-wa:hover { transform: scale(1.05); }
 
-    /* -- HERO -- */
+    /* HERO */
     .hero {
-      padding: 80px 30px 60px;
+      padding: 40px 16px 30px;
       background: linear-gradient(145deg, #eef4fc, #ffffff);
       text-align: center;
-      position: relative;
-      border-bottom: 1px solid rgba(20, 50, 100, 0.06);
-      max-width: 1360px;
-      margin: 0 auto;
-    }
-    .hero-glow {
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(26, 58, 107, 0.04) 0%, transparent 70%);
-      top: -120px;
-      right: -100px;
-      border-radius: 50%;
-      pointer-events: none;
+      border-bottom: 1px solid #e8edf4;
     }
     .hero h1 {
-      font-size: 48px;
+      font-size: 28px;
       font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -1px;
-      margin-bottom: 8px;
+      line-height: 1.2;
       color: #0b1a30;
+      margin-bottom: 6px;
     }
     .hero .sub-dealer {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 600;
       color: #1a3a6b;
-      margin-bottom: 10px;
-      background: rgba(26, 58, 107, 0.06);
+      margin-bottom: 8px;
+      background: rgba(26, 58, 107, 0.08);
       display: inline-block;
-      padding: 4px 20px;
+      padding: 4px 16px;
       border-radius: 40px;
-      border: 1px solid rgba(26, 58, 107, 0.12);
     }
     .hero p {
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 500;
       color: #1a3a6b;
-      margin-bottom: 40px;
-      letter-spacing: 0.3px;
+      margin-bottom: 24px;
     }
 
-    /* TRIPLE ZERO CARDS */
+    /* TRIPLE ZERO */
     .triple-zero-container {
       display: flex;
       justify-content: center;
-      gap: 24px;
+      gap: 10px;
       flex-wrap: wrap;
-      max-width: 950px;
-      margin: 0 auto 45px;
+      max-width: 600px;
+      margin: 0 auto 24px;
     }
     .zero-card {
       background: #ffffff;
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(26, 58, 107, 0.15);
-      border-radius: 28px;
-      padding: 28px 32px;
-      flex: 0 1 180px;
+      border: 1px solid rgba(26, 58, 107, 0.12);
+      border-radius: 16px;
+      padding: 16px 18px;
+      flex: 0 1 100px;
       text-align: center;
-      transition: 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2);
-      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.04);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
-    .zero-card:hover { transform: translateY(-8px); border-color: #1a3a6b; box-shadow: 0 20px 40px -8px rgba(26, 58, 107, 0.12); }
     .zero-card h2 {
-      font-size: 54px;
+      font-size: 32px;
       font-weight: 800;
       color: #1a3a6b;
       line-height: 1;
@@ -187,85 +139,73 @@
     .zero-card p {
       color: #1a3a6b;
       font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 0.4px;
-      margin-top: 6px;
+      font-size: 11px;
+      margin-top: 4px;
     }
     .zero-card small {
       display: block;
-      color: #5b7a9a;
-      font-size: 11px;
-      margin-top: 6px;
+      color: #7a8fa5;
+      font-size: 9px;
+      margin-top: 2px;
       font-weight: 400;
     }
 
     .promo-desc {
-      max-width: 780px;
+      max-width: 600px;
       margin: 0 auto;
       color: #1a3a6b;
-      font-size: 15px;
-      background: rgba(26, 58, 107, 0.03);
-      padding: 16px 28px;
-      border-radius: 60px;
+      font-size: 13px;
+      background: rgba(26, 58, 107, 0.04);
+      padding: 12px 16px;
+      border-radius: 12px;
       border: 1px solid rgba(26, 58, 107, 0.06);
-      backdrop-filter: blur(4px);
     }
-    .promo-desc i { color: #1a3a6b; margin: 0 6px; }
+    .promo-desc i { color: #1a3a6b; margin: 0 4px; }
 
-    /* -- SECTION COMMON -- */
+    /* SECTION */
     .section-container {
-      padding: 70px 30px 50px;
-      max-width: 1300px;
+      padding: 40px 16px 30px;
+      max-width: 1200px;
       margin: 0 auto;
     }
     .section-title {
-      font-size: 34px;
+      font-size: 24px;
       font-weight: 700;
       text-align: center;
-      margin-bottom: 50px;
-      letter-spacing: -0.5px;
+      margin-bottom: 8px;
       color: #0b1a30;
     }
     .section-title span { color: #1a3a6b; }
     .section-sub {
       text-align: center;
       color: #1a3a6b;
-      margin-top: -30px;
-      margin-bottom: 40px;
-      font-size: 16px;
+      font-size: 14px;
+      margin-bottom: 24px;
     }
 
     /* CAR GRID */
     .car-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 32px;
+      grid-template-columns: 1fr;
+      gap: 16px;
     }
     .car-card {
       background: #ffffff;
-      border-radius: 30px;
+      border-radius: 16px;
       overflow: hidden;
-      transition: 0.35s ease;
-      border: 1px solid #dce5f0;
-      box-shadow: 0 12px 30px -8px rgba(0,0,0,0.04);
+      border: 1px solid #e8edf4;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
       display: flex;
       flex-direction: column;
-      backdrop-filter: blur(2px);
     }
-    .car-card:hover { transform: translateY(-10px); border-color: #1a3a6b; box-shadow: 0 24px 50px -12px rgba(26, 58, 107, 0.15); }
     .car-img {
-      height: 200px;
-      background: linear-gradient(145deg, #eef4fc, #ffffff);
+      height: 160px;
+      background: #eef4fc;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #1a3a6b;
-      font-size: 13px;
-      border-bottom: 2px solid #1a3a6b;
       position: relative;
       overflow: hidden;
-      padding: 0;
     }
     .car-img img {
       width: 100%;
@@ -274,285 +214,211 @@
     }
     .car-img .badge {
       position: absolute;
-      top: 14px;
-      right: 16px;
+      top: 10px;
+      right: 12px;
       background: #1a3a6b;
       color: #fff;
       font-weight: 700;
-      font-size: 11px;
-      padding: 4px 14px;
+      font-size: 10px;
+      padding: 3px 12px;
       border-radius: 30px;
       z-index: 2;
     }
     .car-body {
-      padding: 28px 24px 24px;
+      padding: 16px 18px 18px;
       flex: 1;
       display: flex;
       flex-direction: column;
     }
     .car-body h3 {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 700;
-      margin-bottom: 4px;
-      letter-spacing: -0.3px;
       color: #0b1a30;
+      margin-bottom: 2px;
     }
     .car-body .price {
       color: #1a3a6b;
       font-weight: 600;
-      font-size: 15px;
-      margin-bottom: 12px;
+      font-size: 13px;
+      margin-bottom: 8px;
     }
     .price .price-strike {
       text-decoration: line-through;
       color: #8899aa;
-      font-size: 14px;
-      margin-right: 10px;
+      font-size: 12px;
+      margin-right: 6px;
     }
     .price .special-badge {
       background: #1a3a6b;
       color: #fff;
-      padding: 2px 12px;
+      padding: 1px 10px;
       border-radius: 30px;
       font-weight: 700;
-      font-size: 12px;
+      font-size: 10px;
       display: inline-block;
-      margin-left: 6px;
+      margin-left: 4px;
+    }
+    .car-desc {
+      font-size: 12px;
+      color: #4a6a8a;
+      margin-bottom: 8px;
+      line-height: 1.5;
+      padding: 6px 0;
+      border-top: 1px dashed #e8edf4;
+      border-bottom: 1px dashed #e8edf4;
     }
     .benefit-list {
       list-style: none;
-      margin: 8px 0 24px;
+      margin: 6px 0 12px;
       flex: 1;
     }
     .benefit-list li {
-      font-size: 13px;
+      font-size: 12px;
       color: #1a3a6b;
-      margin-bottom: 10px;
+      margin-bottom: 4px;
       display: flex;
       align-items: flex-start;
-      gap: 12px;
+      gap: 8px;
     }
-    .benefit-list i { color: #1a3a6b; width: 18px; font-size: 14px; margin-top: 2px; }
+    .benefit-list i { color: #1a3a6b; width: 16px; font-size: 12px; margin-top: 2px; }
 
     .btn-order {
       background: transparent;
       border: 2px solid #1a3a6b;
       color: #0b1a30;
-      padding: 14px 10px;
+      padding: 10px;
       border-radius: 60px;
       text-align: center;
       font-weight: 700;
-      font-size: 15px;
-      text-decoration: none;
-      transition: 0.25s;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 8px;
-      cursor: pointer;
-    }
-    .btn-order i { font-size: 16px; }
-    .btn-order:hover { background: #1a3a6b; color: #fff; border-color: #1a3a6b; box-shadow: 0 6px 20px rgba(26, 58, 107, 0.2); }
-
-    .btn-varian {
-      background: transparent;
-      border: 1.5px solid #1a3a6b;
-      color: #1a3a6b;
-      padding: 8px 18px;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 12px;
+      font-size: 13px;
       text-decoration: none;
       transition: 0.25s;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
+      margin-top: 4px;
       cursor: pointer;
-      margin-top: 6px;
+      width: 100%;
+    }
+    .btn-order:hover { background: #1a3a6b; color: #fff; border-color: #1a3a6b; }
+
+    .btn-varian {
+      background: transparent;
+      border: 1.5px solid #1a3a6b;
+      color: #1a3a6b;
+      padding: 6px 14px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 11px;
+      text-decoration: none;
+      transition: 0.25s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      margin-top: 4px;
       width: fit-content;
     }
-    .btn-varian i { font-size: 12px; }
     .btn-varian:hover { background: #1a3a6b; color: #fff; border-color: #1a3a6b; }
-
-    /* PRICE LIST MODAL */
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(11, 26, 48, 0.6);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      z-index: 9999;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .modal-overlay.active { display: flex; }
-    .modal-box {
-      background: #ffffff;
-      max-width: 700px;
-      width: 100%;
-      max-height: 85vh;
-      border-radius: 32px;
-      padding: 32px 36px;
-      overflow-y: auto;
-      box-shadow: 0 40px 80px rgba(0,0,0,0.2);
-      position: relative;
-      animation: modalFade 0.3s ease;
-    }
-    @keyframes modalFade {
-      from { opacity: 0; transform: scale(0.96) translateY(20px); }
-      to { opacity: 1; transform: scale(1) translateY(0); }
-    }
-    .modal-box .close-modal {
-      position: sticky;
-      top: 0;
-      float: right;
-      background: #eef4fc;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
-      cursor: pointer;
-      color: #0b1a30;
-      transition: 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .modal-box .close-modal:hover { background: #dce5f0; }
-    .modal-box h2 {
-      font-size: 28px;
-      color: #0b1a30;
-      margin: 0 0 8px 0;
-      border-bottom: 2px solid #1a3a6b;
-      padding-bottom: 12px;
-    }
-    .modal-box .sub-price {
-      color: #5b7a9a;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-    .price-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 12px 0;
-      border-bottom: 1px solid #eef4fc;
-      font-size: 15px;
-      color: #0b1a30;
-    }
-    .price-item .varian-name { font-weight: 500; }
-    .price-item .varian-price { font-weight: 700; color: #1a3a6b; }
-    .price-item .varian-note { font-size: 12px; color: #5b7a9a; font-weight: 400; margin-left: 8px; }
-    .price-item:last-child { border-bottom: none; }
 
     /* PURNA JUAL */
     .purna-jual {
       background: #eef4fc;
-      padding: 70px 30px;
+      padding: 40px 16px;
     }
     .purna-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 28px;
-      max-width: 1200px;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      max-width: 600px;
       margin: 0 auto;
     }
     .purna-card {
       background: #ffffff;
-      padding: 30px 20px;
-      border-radius: 24px;
+      padding: 16px 12px;
+      border-radius: 14px;
       text-align: center;
-      transition: 0.3s;
-      border: 1px solid #dce5f0;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+      border: 1px solid #e8edf4;
     }
-    .purna-card:hover { border-color: #1a3a6b; transform: scale(1.02); box-shadow: 0 12px 28px rgba(26, 58, 107, 0.08); }
     .purna-card i {
-      font-size: 38px;
+      font-size: 24px;
       color: #1a3a6b;
-      margin-bottom: 18px;
+      margin-bottom: 8px;
       display: inline-block;
     }
-    .purna-card h4 { font-size: 18px; margin-bottom: 6px; color: #0b1a30; }
-    .purna-card p { font-size: 13px; color: #1a3a6b; }
+    .purna-card h4 { font-size: 14px; margin-bottom: 2px; color: #0b1a30; }
+    .purna-card p { font-size: 11px; color: #1a3a6b; }
 
     /* TABLE */
-    .table-responsive {
+    .table-wrap {
       background: #ffffff;
-      border-radius: 24px;
-      padding: 6px;
+      border-radius: 14px;
       overflow-x: auto;
-      border: 1px solid #dce5f0;
+      border: 1px solid #e8edf4;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 14px;
-      min-width: 500px;
+      font-size: 12px;
+      min-width: 400px;
     }
     th {
       background: #eef4fc;
       color: #0b1a30;
       font-weight: 700;
-      padding: 18px 20px;
+      padding: 12px 14px;
       text-align: left;
       border-bottom: 2px solid #1a3a6b;
     }
     td {
-      padding: 16px 20px;
-      border-bottom: 1px solid #dce5f0;
+      padding: 10px 14px;
+      border-bottom: 1px solid #e8edf4;
       color: #0b1a30;
     }
     tr:last-child td { border-bottom: 0; }
-    tr:hover td { background: #f5f9ff; }
 
     .event-badge {
-      padding: 2px 12px;
+      padding: 2px 10px;
       border-radius: 30px;
-      font-size: 11px;
+      font-size: 9px;
       font-weight: 700;
       display: inline-block;
-      margin-left: 6px;
+      margin-left: 4px;
     }
     .badge-live { background: #e63946; color: #fff; }
     .badge-open { background: #28a745; color: #fff; }
 
     .exhibition-extra {
       background: #f5f9ff;
-      padding: 28px 32px;
+      padding: 16px 18px;
       border-top: 2px solid #1a3a6b;
-      border-radius: 0 0 24px 24px;
     }
     .exhibition-extra .extra-title {
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 700;
       color: #0b1a30;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
     .extra-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
+      grid-template-columns: 1fr;
+      gap: 10px;
     }
     .extra-item {
       background: #ffffff;
-      padding: 16px 20px;
-      border-radius: 16px;
-      border: 1px solid #dce5f0;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #e8edf4;
     }
     .extra-item strong {
       color: #0b1a30;
       display: block;
-      margin-bottom: 4px;
-      font-size: 14px;
+      font-size: 13px;
     }
     .extra-item p {
-      font-size: 13px;
+      font-size: 12px;
       color: #1a3a6b;
       margin: 0;
     }
@@ -560,417 +426,168 @@
     .btn-wa-large {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       background: #25D366;
       color: #fff;
-      padding: 14px 32px;
+      padding: 12px 24px;
       border-radius: 60px;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 13px;
       text-decoration: none;
       transition: 0.3s;
-      box-shadow: 0 6px 14px rgba(37, 211, 102, 0.25);
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
       border: none;
       cursor: pointer;
+      width: 100%;
+      justify-content: center;
     }
-    .btn-wa-large:hover { transform: scale(1.05); box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4); }
-    .btn-wa-large i { font-size: 18px; }
+    .btn-wa-large:hover { transform: scale(1.02); }
 
     /* DEALER INFO */
     .dealer-highlight {
       background: #ffffff;
-      border-radius: 24px;
-      padding: 28px 32px;
+      border-radius: 14px;
+      padding: 18px 16px;
       border: 1px solid #1a3a6b;
-      margin-top: 30px;
+      margin-top: 20px;
       text-align: center;
-      box-shadow: 0 8px 24px rgba(26, 58, 107, 0.04);
     }
-    .dealer-highlight h3 { color: #0b1a30; font-size: 22px; margin-bottom: 8px; }
-    .dealer-highlight p { color: #1a3a6b; font-size: 15px; }
-    .dealer-highlight i { color: #1a3a6b; margin-right: 6px; }
+    .dealer-highlight h3 { color: #0b1a30; font-size: 18px; margin-bottom: 4px; }
+    .dealer-highlight p { color: #1a3a6b; font-size: 13px; }
+    .dealer-highlight i { color: #1a3a6b; margin-right: 4px; }
+
+    /* MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(11, 26, 48, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-box {
+      background: #ffffff;
+      max-width: 500px;
+      width: 100%;
+      max-height: 80vh;
+      border-radius: 20px;
+      padding: 24px 20px;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      animation: modalFade 0.3s ease;
+    }
+    @keyframes modalFade {
+      from { opacity: 0; transform: scale(0.95) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .modal-box .close-modal {
+      float: right;
+      background: #eef4fc;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #0b1a30;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-box h2 {
+      font-size: 20px;
+      color: #0b1a30;
+      margin: 0 0 4px 0;
+      border-bottom: 2px solid #1a3a6b;
+      padding-bottom: 8px;
+    }
+    .modal-box .sub-price {
+      color: #7a8fa5;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    .price-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eef4fc;
+      font-size: 13px;
+      color: #0b1a30;
+    }
+    .price-item .varian-name { font-weight: 500; }
+    .price-item .varian-price { font-weight: 700; color: #1a3a6b; }
+    .price-item:last-child { border-bottom: none; }
 
     /* FOOTER */
     footer {
       background: #0b1a30;
-      padding: 40px 30px 30px;
+      padding: 24px 16px 20px;
       text-align: center;
-      border-top: 1px solid #1a3a6b;
       color: #b0c8e0;
-      font-size: 13px;
+      font-size: 11px;
     }
     footer i { color: #8bb3e0; margin: 0 4px; }
 
-    /* ============================================================ */
-    /* RESPONSIVE - TETAP MENJAGA UKURAN FONT & SPACING TETAP SAMA */
-    /* ============================================================ */
-    
-    /* Tablet & HP - layout berubah tapi font & spacing tetap */
-    @media (max-width: 820px) {
+    /* ===== RESPONSIVE ===== */
+    @media (min-width: 600px) {
       .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 14px 20px;
+        padding: 14px 24px;
       }
-      .nav-links {
-        gap: 20px;
-        justify-content: center;
-      }
-      .nav-links a {
-        font-size: 14px; /* TETAP 14px */
-      }
-      .hero {
-        padding: 60px 20px 40px;
-      }
-      .hero h1 {
-        font-size: 40px; /* TETAP BESAR */
-      }
-      .zero-card {
-        flex: 0 1 150px;
-        padding: 20px 16px;
-      }
-      .zero-card h2 {
-        font-size: 44px; /* TETAP */
-      }
-      .section-container {
-        padding: 50px 20px 40px;
-      }
-      .section-title {
-        font-size: 30px; /* TETAP */
-      }
-      .car-grid {
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 24px;
-      }
-      .purna-jual {
-        padding: 50px 20px;
-      }
-      .purna-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 20px;
-      }
-      .modal-box {
-        padding: 28px 24px;
-      }
-      .exhibition-extra {
-        padding: 20px 24px;
-      }
-      .extra-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .dealer-highlight {
-        padding: 24px 20px;
-      }
-      .container {
-        padding: 0 20px;
-      }
+      .logo { font-size: 20px; }
+      .nav-links a { font-size: 13px; }
+      .btn-wa { font-size: 13px; padding: 8px 20px; }
+      .hero { padding: 50px 24px 40px; }
+      .hero h1 { font-size: 34px; }
+      .hero p { font-size: 17px; }
+      .zero-card { flex: 0 1 130px; padding: 20px 20px; }
+      .zero-card h2 { font-size: 38px; }
+      .car-grid { grid-template-columns: 1fr 1fr; }
+      .section-title { font-size: 28px; }
+      .purna-grid { grid-template-columns: repeat(3, 1fr); }
+      .extra-grid { grid-template-columns: 1fr 1fr; }
     }
 
-    @media (max-width: 600px) {
-      .navbar {
-        padding: 12px 16px;
-        gap: 10px;
-      }
-      .logo {
-        font-size: 20px; /* TETAP */
-      }
-      .nav-links {
-        gap: 14px;
-        width: 100%;
-        justify-content: center;
-      }
-      .nav-links a {
-        font-size: 13px; /* TETAP */
-      }
-      .btn-wa {
-        padding: 10px 20px;
-        font-size: 13px; /* TETAP */
-        width: 100%;
-        justify-content: center;
-      }
-      .hero {
-        padding: 40px 16px 30px;
-      }
-      .hero h1 {
-        font-size: 32px; /* TETAP */
-      }
-      .hero .sub-dealer {
-        font-size: 16px; /* TETAP */
-      }
-      .hero p {
-        font-size: 17px; /* TETAP */
-        margin-bottom: 30px;
-      }
-      .triple-zero-container {
-        gap: 12px;
-        margin-bottom: 30px;
-      }
-      .zero-card {
-        flex: 0 1 120px;
-        padding: 16px 12px;
-        border-radius: 20px;
-      }
-      .zero-card h2 {
-        font-size: 36px; /* TETAP */
-      }
-      .zero-card p {
-        font-size: 13px; /* TETAP */
-      }
-      .zero-card small {
-        font-size: 10px; /* TETAP */
-      }
-      .promo-desc {
-        padding: 14px 18px;
-        font-size: 14px; /* TETAP */
-        border-radius: 30px;
-      }
-      .section-container {
-        padding: 40px 16px 30px;
-      }
-      .section-title {
-        font-size: 26px; /* TETAP */
-        margin-bottom: 30px;
-      }
-      .section-sub {
-        font-size: 15px; /* TETAP */
-        margin-top: -20px;
-        margin-bottom: 30px;
-      }
-      .car-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      .car-body {
-        padding: 20px 18px 18px;
-      }
-      .car-body h3 {
-        font-size: 22px; /* TETAP */
-      }
-      .car-body .price {
-        font-size: 14px; /* TETAP */
-      }
-      .car-img {
-        height: 170px;
-      }
-      .car-img .badge {
-        top: 10px;
-        right: 10px;
-        font-size: 10px;
-        padding: 3px 12px;
-      }
-      .benefit-list li {
-        font-size: 12px; /* TETAP */
-        gap: 10px;
-      }
-      .btn-order {
-        font-size: 14px; /* TETAP */
-        padding: 12px 10px;
-      }
-      .btn-varian {
-        font-size: 11px; /* TETAP */
-        padding: 6px 14px;
-      }
-      .purna-jual {
-        padding: 40px 16px;
-      }
-      .purna-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-      }
-      .purna-card {
-        padding: 18px 14px;
-      }
-      .purna-card i {
-        font-size: 30px; /* TETAP */
-        margin-bottom: 12px;
-      }
-      .purna-card h4 {
-        font-size: 16px; /* TETAP */
-      }
-      .purna-card p {
-        font-size: 12px; /* TETAP */
-      }
-      .table-responsive {
-        border-radius: 16px;
-        padding: 4px;
-      }
-      table {
-        font-size: 13px; /* TETAP */
-        min-width: 420px;
-      }
-      th, td {
-        padding: 12px 14px;
-      }
-      .event-badge {
-        font-size: 10px;
-        padding: 2px 10px;
-        margin-left: 4px;
-      }
-      .exhibition-extra {
-        padding: 16px 18px;
-      }
-      .exhibition-extra .extra-title {
-        font-size: 16px; /* TETAP */
-      }
-      .extra-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      .extra-item {
-        padding: 12px 16px;
-      }
-      .extra-item strong {
-        font-size: 13px; /* TETAP */
-      }
-      .extra-item p {
-        font-size: 12px; /* TETAP */
-      }
-      .btn-wa-large {
-        padding: 12px 24px;
-        font-size: 14px; /* TETAP */
-        width: 100%;
-        justify-content: center;
-      }
-      .dealer-highlight {
-        padding: 18px 16px;
-        margin-top: 20px;
-      }
-      .dealer-highlight h3 {
-        font-size: 20px; /* TETAP */
-      }
-      .dealer-highlight p {
-        font-size: 14px; /* TETAP */
-      }
-      .modal-box {
-        padding: 20px 16px;
-        border-radius: 24px;
-      }
-      .modal-box h2 {
-        font-size: 24px; /* TETAP */
-      }
-      .modal-box .sub-price {
-        font-size: 13px; /* TETAP */
-      }
-      .modal-box .close-modal {
-        width: 36px;
-        height: 36px;
-        font-size: 18px;
-      }
-      .price-item {
-        font-size: 14px; /* TETAP */
-        padding: 10px 0;
-      }
-      footer {
-        padding: 30px 16px 20px;
-        font-size: 12px; /* TETAP */
-      }
-      .container {
-        padding: 0 16px;
-      }
+    @media (min-width: 900px) {
+      .navbar { padding: 16px 40px; }
+      .hero { padding: 70px 40px 50px; }
+      .hero h1 { font-size: 44px; }
+      .zero-card { flex: 0 1 160px; padding: 24px 28px; }
+      .zero-card h2 { font-size: 46px; }
+      .car-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      .section-title { font-size: 32px; }
+      .purna-grid { grid-template-columns: repeat(5, 1fr); }
+      .extra-grid { grid-template-columns: repeat(3, 1fr); }
     }
 
-    /* HP sangat kecil - tetap pertahankan ukuran */
     @media (max-width: 400px) {
-      .navbar {
-        padding: 10px 12px;
-      }
-      .logo {
-        font-size: 18px; /* TETAP */
-      }
-      .nav-links {
-        gap: 10px;
-      }
-      .nav-links a {
-        font-size: 12px; /* TETAP */
-      }
-      .btn-wa {
-        font-size: 12px; /* TETAP */
-        padding: 8px 16px;
-      }
-      .hero h1 {
-        font-size: 28px; /* TETAP */
-      }
-      .hero .sub-dealer {
-        font-size: 14px; /* TETAP */
-      }
-      .hero p {
-        font-size: 15px; /* TETAP */
-      }
-      .zero-card {
-        flex: 0 1 100px;
-        padding: 12px 8px;
-        border-radius: 16px;
-      }
-      .zero-card h2 {
-        font-size: 30px; /* TETAP */
-      }
-      .zero-card p {
-        font-size: 11px; /* TETAP */
-      }
-      .zero-card small {
-        font-size: 9px; /* TETAP */
-      }
-      .promo-desc {
-        font-size: 12px; /* TETAP */
-        padding: 10px 14px;
-      }
-      .section-title {
-        font-size: 22px; /* TETAP */
-      }
-      .section-sub {
-        font-size: 14px; /* TETAP */
-      }
-      .car-body h3 {
-        font-size: 20px; /* TETAP */
-      }
-      .car-body .price {
-        font-size: 13px; /* TETAP */
-      }
-      .car-img {
-        height: 150px;
-      }
-      .btn-order {
-        font-size: 13px; /* TETAP */
-        padding: 10px 8px;
-      }
-      .purna-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-      .purna-card {
-        padding: 14px 10px;
-      }
-      .purna-card i {
-        font-size: 26px; /* TETAP */
-      }
-      .purna-card h4 {
-        font-size: 14px; /* TETAP */
-      }
-      .purna-card p {
-        font-size: 11px; /* TETAP */
-      }
-      table {
-        font-size: 12px; /* TETAP */
-        min-width: 340px;
-      }
-      th, td {
-        padding: 10px 10px;
-      }
-      .dealer-highlight h3 {
-        font-size: 18px; /* TETAP */
-      }
-      .dealer-highlight p {
-        font-size: 13px; /* TETAP */
-      }
-      .modal-box h2 {
-        font-size: 20px; /* TETAP */
-      }
-      .price-item {
-        font-size: 13px; /* TETAP */
-      }
-      footer {
-        font-size: 11px; /* TETAP */
-      }
+      .navbar { padding: 8px 10px; gap: 4px; }
+      .logo { font-size: 15px; }
+      .nav-links a { font-size: 10px; }
+      .nav-links { gap: 8px; }
+      .btn-wa { font-size: 10px; padding: 5px 10px; }
+      .btn-wa i { font-size: 11px; }
+      .hero h1 { font-size: 22px; }
+      .hero p { font-size: 13px; }
+      .zero-card { flex: 0 1 80px; padding: 10px 8px; }
+      .zero-card h2 { font-size: 24px; }
+      .zero-card p { font-size: 9px; }
+      .zero-card small { font-size: 7px; }
+      .promo-desc { font-size: 11px; padding: 8px 10px; }
+      .car-body h3 { font-size: 16px; }
+      .car-img { height: 130px; }
+      .section-title { font-size: 20px; }
+      .car-desc { font-size: 11px; }
+      .purna-card { padding: 12px 8px; }
+      .purna-card i { font-size: 20px; }
+      .purna-card h4 { font-size: 12px; }
+      .purna-card p { font-size: 10px; }
+      .dealer-highlight h3 { font-size: 16px; }
+      .dealer-highlight p { font-size: 12px; }
     }
   </style>
 </head>
@@ -978,7 +595,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo"><i class="fas fa-car"></i> Hyundai Cimanggis Depok</div>
+    <div class="logo"><i class="fas fa-car"></i> Hyundai Cimanggis</div>
     <ul class="nav-links">
       <li><a href="#promo">Triple Zero</a></li>
       <li><a href="#lineup">Line-Up</a></li>
@@ -986,13 +603,12 @@
       <li><a href="#pameran">Pameran</a></li>
     </ul>
     <a href="https://wa.me/6285814307221" class="btn-wa" target="_blank">
-      <i class="fab fa-whatsapp"></i> Hubungi Zahra
+      <i class="fab fa-whatsapp"></i> Zahra
     </a>
   </nav>
 
   <!-- HERO -->
   <section class="hero" id="promo">
-    <div class="hero-glow"></div>
     <h1>Bawa Pulang Mobil Hyundai<br>Impian Sekarang</h1>
     <div class="sub-dealer"><i class="fas fa-map-pin"></i> Hyundai Cimanggis · Depok</div>
     <p>🚗 Promo Juli 2026 · Triple Zero + Harga Spesial</p>
@@ -1021,9 +637,9 @@
     </div>
   </section>
 
-  <!-- LINE UP MOBIL -->
+  <!-- LINE UP -->
   <section class="section-container" id="lineup">
-    <h2 class="section-title">Line-Up <span>Hyundai</span> Cimanggis</h2>
+    <h2 class="section-title">Line-Up <span>Hyundai</span></h2>
     <p class="section-sub">Pilih mobil favoritmu, nikmati Triple Zero + benefit tambahan</p>
 
     <div class="car-grid">
@@ -1039,41 +655,45 @@
             <span class="price-strike">Rp370.250.000</span> Rp355.250.000
             <span class="special-badge">hemat 15jt</span>
           </div>
+          <div class="car-desc">
+            <i class="fas fa-users" style="color:#1a3a6b;"></i> MPV 7-seater modern dengan desain futuristik. Dilengkapi <strong>SmartSense</strong> (FCA, LKA, SCC), <strong>Bose Premium Audio</strong> 8-speaker, dan panoramic sunroof. Mesin 1.5L Turbo bertenaga 115 PS.
+          </div>
           <ul class="benefit-list">
             <li><i class="fas fa-bolt"></i> 0% Bunga · 0 Provisi · 0 Admin</li>
             <li><i class="fas fa-wrench"></i> Gratis servis 3+1 th / 60.000 km</li>
             <li><i class="fas fa-arrow-right"></i> Trade-in benefit Rp20 Juta*</li>
-            <li><i class="fas fa-crown"></i> SmartSense · Bose Premium Audio · 360 Camera</li>
           </ul>
-          <button class="btn-varian" onclick="openModal('stargazer')"><i class="fas fa-list-ul"></i> Lihat Semua Varian</button>
+          <button class="btn-varian" onclick="openModal('stargazer')"><i class="fas fa-list-ul"></i> Varian</button>
           <a href="https://wa.me/6285814307221" class="btn-order" target="_blank"><i class="fab fa-whatsapp"></i> Tanya Zahra</a>
         </div>
       </div>
 
-      <!-- STARGAZER CARTENZ X -->
+      <!-- CARTENZ X -->
       <div class="car-card">
         <div class="car-img">
           <img src="https://imgcdn.oto.com/large/gallery/exterior/15/3259/hyundai-stargazer-cartenz-x-front-angle-low-view-301298.jpg" alt="Hyundai Stargazer Cartenz X">
           <div class="badge">Special</div>
         </div>
         <div class="car-body">
-          <h3>STARGAZER CARTENZ X</h3>
+          <h3>CARTENZ X</h3>
           <div class="price">
             <span class="price-strike">Rp370.250.000</span> Rp355.250.000
             <span class="special-badge">Promo</span>
+          </div>
+          <div class="car-desc">
+            <i class="fas fa-crown" style="color:#1a3a6b;"></i> Edisi spesial dengan tampilan <strong>SUV-inspired</strong> yang lebih gagah. Fitur <strong>Captain Seat</strong> di baris kedua, <strong>360° Camera</strong>, ventilasi kursi depan, dan ambient lighting 64 warna.
           </div>
           <ul class="benefit-list">
             <li><i class="fas fa-bolt"></i> 0% Bunga · 0 Provisi · 0 Admin</li>
             <li><i class="fas fa-wrench"></i> Gratis servis 3+1 th / 60.000 km</li>
             <li><i class="fas fa-arrow-right"></i> Trade-in benefit Rp20 Juta*</li>
-            <li><i class="fas fa-crown"></i> SmartSense · Bose Premium Audio · Captain Seat</li>
           </ul>
-          <button class="btn-varian" onclick="openModal('cartenzX')"><i class="fas fa-list-ul"></i> Lihat Semua Varian</button>
+          <button class="btn-varian" onclick="openModal('cartenzX')"><i class="fas fa-list-ul"></i> Varian</button>
           <a href="https://wa.me/6285814307221" class="btn-order" target="_blank"><i class="fab fa-whatsapp"></i> Tanya Zahra</a>
         </div>
       </div>
 
-      <!-- STARGAZER ACTIVE -->
+      <!-- ACTIVE -->
       <div class="car-card">
         <div class="car-img">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaG0wu0MVtIm2St-_bexvwwUn2LaLsjFfGYn3-wn7zjw&s=10" alt="Hyundai Stargazer Active">
@@ -1085,18 +705,20 @@
             <span class="price-strike">Rp271.550.000</span> Rp241.550.000
             <span class="special-badge">hemat 30jt</span>
           </div>
+          <div class="car-desc">
+            <i class="fas fa-rocket" style="color:#1a3a6b;"></i> Varian entry-level dengan harga paling terjangkau. Tetap memiliki <strong>Smartstream Engine 1.5L</strong> irit BBM, layar 8 inci, AC digital, dan 6 airbags. Pilihan tepat untuk keluarga.
+          </div>
           <ul class="benefit-list">
             <li><i class="fas fa-bolt"></i> 0% Bunga · 0 Provisi · 0 Admin</li>
             <li><i class="fas fa-wrench"></i> Gratis servis 3+1 th / 60.000 km</li>
-            <li><i class="fas fa-arrow-right"></i> Trade-in benefit Rp20 Juta*</li>
             <li><i class="fas fa-users"></i> 7-Seater · Smartstream Engine</li>
           </ul>
-          <button class="btn-varian" onclick="openModal('stargazer')"><i class="fas fa-list-ul"></i> Lihat Semua Varian</button>
+          <button class="btn-varian" onclick="openModal('stargazer')"><i class="fas fa-list-ul"></i> Varian</button>
           <a href="https://wa.me/6285814307221" class="btn-order" target="_blank"><i class="fab fa-whatsapp"></i> Tanya Zahra</a>
         </div>
       </div>
 
-      <!-- The all-new SANTA FE -->
+      <!-- SANTA FE -->
       <div class="car-card">
         <div class="car-img">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmey-ciNJuWE61nx0GTv0C5w_ks_YclhAD4LMv7j5ang&s=10" alt="Hyundai Santa Fe">
@@ -1105,12 +727,15 @@
         <div class="car-body">
           <h3>The all-new SANTA FE</h3>
           <div class="price">Triple Zero + Garansi Baterai</div>
+          <div class="car-desc">
+            <i class="fas fa-mountain" style="color:#1a3a6b;"></i> SUV premium 7-seater dengan desain <strong>boxy rugged</strong>. Pilihan mesin <strong>Hybrid 1.6L Turbo</strong> dan <strong>2.5L GDi</strong>. Fitur unggulan: Terrain Mode, Blind View Monitor, dan garansi baterai 8 tahun.
+          </div>
           <ul class="benefit-list">
             <li><i class="fas fa-bolt"></i> 0% Bunga · 0 Provisi · 0 Admin</li>
             <li><i class="fas fa-wrench"></i> Gratis servis 3+1 th / 60.000 km</li>
             <li><i class="fas fa-battery-full"></i> Garansi baterai 8 th / 160.000 km</li>
           </ul>
-          <button class="btn-varian" onclick="openModal('santaFe')"><i class="fas fa-list-ul"></i> Lihat Semua Varian</button>
+          <button class="btn-varian" onclick="openModal('santaFe')"><i class="fas fa-list-ul"></i> Varian</button>
           <a href="https://wa.me/6285814307221" class="btn-order" target="_blank"><i class="fab fa-whatsapp"></i> Tanya Zahra</a>
         </div>
       </div>
@@ -1124,13 +749,15 @@
         <div class="car-body">
           <h3>IONIQ 5</h3>
           <div class="price">Bunga 0% · DP 20% · 5 tahun</div>
+          <div class="car-desc">
+            <i class="fas fa-bolt" style="color:#1a3a6b;"></i> Mobil listrik dengan desain retro-futuristik. <strong>Ultra-fast charging 10-80% hanya 18 menit</strong>. Fitur <strong>V2L (Vehicle-to-Load)</strong> untuk menyalakan perangkat listrik. Jarak tempuh hingga 600 km.
+          </div>
           <ul class="benefit-list">
             <li><i class="fas fa-shield-alt"></i> All-risk Insurance 5 th gratis</li>
             <li><i class="fas fa-tools"></i> Service 5 th gratis</li>
-            <li><i class="fas fa-charging-station"></i> Public Charging 150kWh/bln (5 th)</li>
-            <li><i class="fas fa-home"></i> + Home Charger</li>
+            <li><i class="fas fa-charging-station"></i> Public Charging 150kWh/bln</li>
           </ul>
-          <button class="btn-varian" onclick="openModal('ioniq5')"><i class="fas fa-list-ul"></i> Lihat Semua Varian</button>
+          <button class="btn-varian" onclick="openModal('ioniq5')"><i class="fas fa-list-ul"></i> Varian</button>
           <a href="https://wa.me/6285814307221" class="btn-order" target="_blank"><i class="fab fa-whatsapp"></i> Tanya Zahra</a>
         </div>
       </div>
@@ -1144,13 +771,15 @@
         <div class="car-body">
           <h3>The all-new KONA Electric</h3>
           <div class="price">Bunga 0% · DP 20% · 5 tahun</div>
+          <div class="car-desc">
+            <i class="fas fa-city" style="color:#1a3a6b;"></i> SUV listrik kompak dengan desain <strong>bold & sporty</strong>. Dilengkapi <strong>Bluelink</strong> connected car, head-up display, dan fitur <strong>Smart Park</strong>. Jarak tempuh hingga 500 km dengan 1 kali charge.
+          </div>
           <ul class="benefit-list">
             <li><i class="fas fa-shield-alt"></i> All-risk Insurance 5 th gratis</li>
             <li><i class="fas fa-tools"></i> Service 5 th / 75.000 km gratis</li>
-            <li><i class="fas fa-charging-station"></i> Public Charging 150kWh/bln (5 th)</li>
             <li><i class="fas fa-home"></i> + Home Charger</li>
           </ul>
-          <button class="btn-varian" onclick="openModal('konaElectric')"><i class="fas fa-list-ul"></i> Lihat Semua Varian</button>
+          <button class="btn-varian" onclick="openModal('konaElectric')"><i class="fas fa-list-ul"></i> Varian</button>
           <a href="https://wa.me/6285814307221" class="btn-order" target="_blank"><i class="fab fa-whatsapp"></i> Tanya Zahra</a>
         </div>
       </div>
@@ -1159,17 +788,17 @@
 
   <!-- PURNA JUAL -->
   <section class="purna-jual" id="purnajual">
-    <h2 class="section-title">Layanan <span>Purna Jual</span> Hyundai</h2>
-    <p class="section-sub" style="margin-bottom: 30px;">Nikmati kepemilikan tanpa khawatir</p>
+    <h2 class="section-title">Layanan <span>Purna Jual</span></h2>
+    <p class="section-sub">Nikmati kepemilikan tanpa khawatir</p>
     <div class="purna-grid">
       <div class="purna-card">
         <i class="fas fa-headset"></i>
         <h4>Call Center 24 Jam</h4>
-        <p>Layanan darurat & bantuan</p>
+        <p>Layanan darurat</p>
       </div>
       <div class="purna-card">
         <i class="fas fa-tools"></i>
-        <h4>Gratis Servis Berkala</h4>
+        <h4>Gratis Servis</h4>
         <p>3+1 th / 60.000 km*</p>
       </div>
       <div class="purna-card">
@@ -1179,109 +808,101 @@
       </div>
       <div class="purna-card">
         <i class="fas fa-arrow-up"></i>
-        <h4>Jaminan Jual Kembali</h4>
-        <p>Hingga 70% di tahun ke-3</p>
+        <h4>Jaminan Jual</h4>
+        <p>Hingga 70% di th ke-3</p>
       </div>
       <div class="purna-card">
         <i class="fas fa-exchange-alt"></i>
-        <h4>Trade-in Benefit</h4>
+        <h4>Trade-in</h4>
         <p>Hingga Rp20 Juta*</p>
       </div>
     </div>
   </section>
 
-  <!-- JADWAL PAMERAN -->
-  <section class="section-container" id="pameran" style="padding: 70px 30px 60px; max-width: 1200px; margin: 0 auto;">
-    <h2 class="section-title" style="font-size: 38px; font-weight: 800; text-align: center; margin-bottom: 16px; letter-spacing: -0.5px; color: #0b1a30;">
-      Jadwal <span style="color: #1a3a6b;">Pameran</span> Hyundai 2026
-    </h2>
-    <p class="section-sub" style="text-align: center; color: #1a3a6b; margin-top: 0; margin-bottom: 48px; font-size: 18px; font-weight: 500;">
-      Datang dan rasakan langsung promo Triple Zero
-    </p>
+  <!-- PAMERAN -->
+  <section class="section-container" id="pameran">
+    <h2 class="section-title">Jadwal <span>Pameran</span> 2026</h2>
+    <p class="section-sub">Datang dan rasakan langsung promo Triple Zero</p>
     
-    <div style="background: #ffffff; border-radius: 24px; overflow: hidden; border: 1px solid #dce5f0; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
-      <div style="overflow-x: auto; padding: 0;">
-        <table style="width: 100%; border-collapse: collapse; font-size: 14px; min-width: 500px;">
-          <thead>
-            <tr>
-              <th style="background: #eef4fc; color: #0b1a30; font-weight: 700; padding: 18px 24px; text-align: left; border-bottom: 2px solid #1a3a6b;">Kota</th>
-              <th style="background: #eef4fc; color: #0b1a30; font-weight: 700; padding: 18px 24px; text-align: left; border-bottom: 2px solid #1a3a6b;">Lokasi</th>
-              <th style="background: #eef4fc; color: #0b1a30; font-weight: 700; padding: 18px 24px; text-align: left; border-bottom: 2px solid #1a3a6b;">Tanggal</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;"><strong>Jakarta</strong></td>
-              <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;">
-                Jakarta Fair 2026 (PRJ) 
-                <br><small style="color: #5b7a9a; font-size: 12px;">JIExpo Kemayoran (Hall A)</small> 
-                <span class="event-badge badge-live">Sedang Berlangsung</span>
-              </td>
-              <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;">11 Juni - 12 Juli 2026</td>
-            </tr>
-            <tr>
-              <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;"><strong>Jakarta Barat</strong></td>
-              <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;">
-                Showroom Resmi Hyundai Sinar Inti 
-                <br><small style="color: #5b7a9a; font-size: 12px;">Hyundai City Store - Lippo Mall Puri (Atrium 1 GF)</small>
-                <span class="event-badge badge-open">Buka Setiap Hari</span>
-              </td>
-              <td style="padding: 16px 24px; border-bottom: 1px solid #dce5f0; color: #0b1a30;">Setiap Hari</td>
-            </tr>
-            <tr style="border-bottom: none;">
-              <td colspan="3" style="padding: 0;">
-                <div class="exhibition-extra">
-                  <div class="extra-title">🎁 Keuntungan Eksklusif &amp; Promo Triple Zero:</div>
-                  <div class="extra-grid">
-                    <div class="extra-item">
-                      <strong>Cicilan Ringan Fixed</strong>
-                      <p>Nikmati skema cicilan tetap (fixed) mulai dari Rp 2 Jutaan saja per bulan.</p>
-                    </div>
-                    <div class="extra-item">
-                      <strong>DP Rendah &amp; Tenor Panjang</strong>
-                      <p>Uang muka (DP) ringan mulai 15% dengan pilihan tenor kredit hingga 8 tahun.</p>
-                    </div>
-                    <div class="extra-item">
-                      <strong>Hadiah Langsung Lucky Dip</strong>
-                      <p>Kesempatan membawa pulang iPhone, Smartwatch, hingga E-money gratis setiap transaksi.</p>
-                    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Kota</th>
+            <th>Lokasi</th>
+            <th>Tanggal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Jakarta</strong></td>
+            <td>
+              Jakarta Fair 2026 (PRJ)
+              <br><small style="color: #7a8fa5;">JIExpo Kemayoran</small>
+              <span class="event-badge badge-live">Live</span>
+            </td>
+            <td>11 Juni - 12 Juli</td>
+          </tr>
+          <tr>
+            <td><strong>Jakarta Barat</strong></td>
+            <td>
+              Hyundai City Store
+              <br><small style="color: #7a8fa5;">Lippo Mall Puri</small>
+              <span class="event-badge badge-open">Open</span>
+            </td>
+            <td>Setiap Hari</td>
+          </tr>
+          <tr>
+            <td colspan="3" style="padding: 0;">
+              <div class="exhibition-extra">
+                <div class="extra-title">🎁 Keuntungan Eksklusif:</div>
+                <div class="extra-grid">
+                  <div class="extra-item">
+                    <strong>Cicilan Ringan Fixed</strong>
+                    <p>Mulai Rp 2 Jutaan/bulan</p>
                   </div>
-                  <div style="margin-top: 20px;">
-                    <a href="https://wa.me/6285814307221" target="_blank" class="btn-wa-large">
-                      <i class="fab fa-whatsapp"></i> Hubungi Kami &amp; Jadwalkan Test Drive
-                    </a>
+                  <div class="extra-item">
+                    <strong>DP Rendah</strong>
+                    <p>Mulai 15% · Tenor hingga 8 tahun</p>
+                  </div>
+                  <div class="extra-item">
+                    <strong>Lucky Dip</strong>
+                    <p>iPhone, Smartwatch, E-money</p>
                   </div>
                 </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+                <div style="margin-top: 14px;">
+                  <a href="https://wa.me/6285814307221" target="_blank" class="btn-wa-large">
+                    <i class="fab fa-whatsapp"></i> Test Drive & Info
+                  </a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
-  <!-- DEALER INFO & FOOTER -->
-  <div style="padding: 20px 30px 10px; max-width: 1300px; margin: 0 auto;">
+  <!-- DEALER -->
+  <div style="padding: 0 16px 10px; max-width: 1200px; margin: 0 auto;">
     <div class="dealer-highlight">
       <h3><i class="fas fa-store"></i> Hyundai Cimanggis</h3>
-      <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Cimanggis No. 88, Depok · Buka Senin–Minggu 08.00–20.00</p>
-      <p><i class="fas fa-phone-alt"></i> (021) 1234-5678 · <i class="fab fa-whatsapp"></i> 0858-1430-7221 (Zahra)</p>
-      <p style="font-size: 13px; color: #5b7a9a; margin-top: 8px;">*Syarat & ketentuan berlaku · Hubungi tim kami untuk detail promo</p>
+      <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Cimanggis No. 88, Depok</p>
+      <p><i class="fas fa-phone-alt"></i> (021) 1234-5678 · <i class="fab fa-whatsapp"></i> 0858-1430-7221</p>
+      <p style="font-size: 11px; color: #7a8fa5; margin-top: 4px;">*Syarat & ketentuan berlaku</p>
     </div>
   </div>
 
   <footer>
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <p><i class="fas fa-car"></i> Hyundai Cimanggis · 2026</p>
-      <p style="margin-top: 8px; font-size: 12px; opacity: 0.8;">Promo Triple Zero berlaku untuk pembelian kredit melalui mitra pembiayaan terpilih. Foto & ilustrasi hanya pemanis. Hubungi Zahra untuk info lengkap.</p>
-    </div>
+    <p><i class="fas fa-car"></i> Hyundai Cimanggis · 2026</p>
+    <p style="margin-top: 4px; font-size: 10px; opacity: 0.7;">Promo Triple Zero berlaku untuk pembelian kredit melalui mitra pembiayaan terpilih.</p>
   </footer>
 
-  <!-- MODAL HARGA VARIAN -->
+  <!-- MODAL -->
   <div class="modal-overlay" id="priceModal">
     <div class="modal-box">
       <button class="close-modal" onclick="closeModal()"><i class="fas fa-times"></i></button>
-      <h2 id="modalTitle">Daftar Harga Varian</h2>
+      <h2 id="modalTitle">Daftar Harga</h2>
       <div class="sub-price">Harga OTR Jakarta · Promo Juli 2026</div>
       <div id="modalContent"></div>
     </div>
@@ -1323,30 +944,22 @@
       konaElectric: 'KONA Electric'
     };
 
-    function openModal(modelKey) {
+    function openModal(key) {
       const modal = document.getElementById('priceModal');
       const content = document.getElementById('modalContent');
       const title = document.getElementById('modalTitle');
-      
-      const data = priceData[modelKey];
-      const modelName = modalTitles[modelKey] || modelKey;
-      title.textContent = `Harga Varian ${modelName}`;
+      const data = priceData[key];
+      title.textContent = 'Harga Varian ' + (modalTitles[key] || key);
       
       if (data) {
         let html = '';
         data.forEach(item => {
-          html += `
-            <div class="price-item">
-              <span class="varian-name">${item.varian}</span>
-              <span class="varian-price">${item.harga}</span>
-            </div>
-          `;
+          html += '<div class="price-item"><span class="varian-name">' + item.varian + '</span><span class="varian-price">' + item.harga + '</span></div>';
         });
         content.innerHTML = html;
       } else {
-        content.innerHTML = '<p style="color: #5b7a9a;">Data varian belum tersedia, hubungi kami untuk info lengkap.</p>';
+        content.innerHTML = '<p style="color: #7a8fa5;">Hubungi kami untuk info lengkap.</p>';
       }
-      
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
@@ -1359,7 +972,6 @@
     document.getElementById('priceModal').addEventListener('click', function(e) {
       if (e.target === this) closeModal();
     });
-
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeModal();
     });
